@@ -1,8 +1,4 @@
 import {
-    mobile,
-    backend,
-    creator,
-    web,
     javascript,
     typescript,
     html,
@@ -15,14 +11,13 @@ import {
     git,
     figma,
     docker,
-    meta,
-    starbucks,
-    tesla,
-    shopify,
-    carrent,
-    jobit,
-    tripguide,
     threejs,
+    swappie,
+    tgrwrt,
+    documentChat,
+    omaGarden,
+    homeweather,
+    petmatchfinder
   } from "../assets";
   
   export const navLinks = [
@@ -37,25 +32,6 @@ import {
     {
       id: "contact",
       title: "Contact",
-    },
-  ];
-  
-  const services = [
-    {
-      title: "Web Developer",
-      icon: web,
-    },
-    {
-      title: "React Native Developer",
-      icon: mobile,
-    },
-    {
-      title: "Backend Developer",
-      icon: backend,
-    },
-    {
-      title: "Content Creator",
-      icon: creator,
     },
   ];
   
@@ -113,153 +89,156 @@ import {
       icon: docker,
     },
   ];
+
+  const education = [
+    {
+      degree: "Bachelor in Information Technology",
+      date: "Aug 2021 - Present",
+      location: "Espoo, Finland",
+      school: "Metropolia University of Applied Sciences"
+    },
+    {
+      degree: "Bachelor in Business Administration",
+      date: "Sept 2016 - May 2020",
+      location: "Espoo, Finland",
+      school: "Laurea University of Applied Sciences"
+    }
+  ]
   
   const experiences = [
     {
-      title: "React.js Developer",
-      company_name: "Starbucks",
-      icon: starbucks,
+      title: "Diagnostics and Preparation Coach",
+      company_name: "Swappie",
+      icon: swappie,
       iconBg: "#383E56",
-      date: "March 2020 - April 2021",
+      date: "Jul 2020 2020 - Apr 2023",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Providing training and support to members of team.",
+        "Recording the data of received materials.",
+        "Running diagnostics of refurbished phones.",
+        "Repairing of refurbished phones.",
       ],
     },
     {
-      title: "React Native Developer",
-      company_name: "Tesla",
-      icon: tesla,
+      title: "Software Development Trainee",
+      company_name: "TOYOTA GAZOO Racing World Rally Team",
+      icon: tgrwrt,
       iconBg: "#E6DEDD",
-      date: "Jan 2021 - Feb 2022",
+      date: "Aug 2023 - Aug 2024",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Developing and implementing web applications using SCRUM Agile methods.",
+        "Creating and maintaining user interfaces using SolidJS, Tailwind CSS, and TypeScript.",
+        "Creating and integrating APIs for seamless communication between the front-end and back - end components of applications.",
+        "Ensuring efficient data organisation using SQL Server, H2 Memory Database, MySQL, MariaDB.",
+        "Utilising version control systems like Git to track code changes and collaborate with other team members.",
+        "Managing Azure DevOps CI/CD pipelines to deploy code changes."
       ],
     },
     {
-      title: "Web Developer",
-      company_name: "Shopify",
-      icon: shopify,
+      title: "Junior Software Developer",
+      company_name: "TOYOTA GAZOO Racing World Rally Team",
+      icon: tgrwrt,
       iconBg: "#383E56",
-      date: "Jan 2022 - Jan 2023",
+      date: "Sept 2024 - Present",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "Full stack Developer",
-      company_name: "Meta",
-      icon: meta,
-      iconBg: "#E6DEDD",
-      date: "Jan 2023 - Present",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Supporting software design and coding efforts under the guidance of senior developers.",
+        "Participating in development meetings and contributing to discussions on project progress, challenges, and solutions.",
+        "Learning and familiarising with the codebase, continuously improving coding skills and technical knowledge.",
+        "Writing, testing, and maintaining code to support ongoing projects and feature development.",
+        "Developing a deep understanding of the business domain, ensuring alignment of technical solutions with business needs.",
+        "Collecting and analysing user feedback to enhance program functionality and user experience.",
+        "Monitoring the performance of internal systems and identifying opportunities for optimisation."
       ],
     },
   ];
-  
-  const testimonials = [
-    {
-      testimonial:
-        "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-      name: "Sara Lee",
-      designation: "CFO",
-      company: "Acme Co",
-      image: "https://randomuser.me/api/portraits/women/4.jpg",
-    },
-    {
-      testimonial:
-        "I've never met a web developer who truly cares about their clients' success like Rick does.",
-      name: "Chris Brown",
-      designation: "COO",
-      company: "DEF Corp",
-      image: "https://randomuser.me/api/portraits/men/5.jpg",
-    },
-    {
-      testimonial:
-        "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-      name: "Lisa Wang",
-      designation: "CTO",
-      company: "456 Enterprises",
-      image: "https://randomuser.me/api/portraits/women/6.jpg",
-    },
-  ];
+ 
   
   const projects = [
+    
     {
-      name: "Car Rent",
+      name: "Pet Match Finder",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "Pet Match Finder is an application where users are able to login, view pets, adopt pets or put pets for adoption online, provide ratings and feedback to other users. It is a graphQl server built with TypeScript, Node.js and Express. The main aim of this app is to create seamless interface for pet adoption.",
       tags: [
         {
-          name: "react",
+          name: "Node.js",
           color: "blue-text-gradient",
         },
         {
-          name: "mongodb",
+          name: "MongoDB",
           color: "green-text-gradient",
         },
         {
-          name: "tailwind",
+          name: "GraphQL",
           color: "pink-text-gradient",
         },
       ],
-      image: carrent,
-      source_code_link: "https://github.com/",
+      image: petmatchfinder,
+      source_code_link: "https://github.com/anish0123/petMatchFinderAPI",
     },
     {
-      name: "Job IT",
+      name: "Home Weather",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "HomeWeather is an android mobile sensor-based application utilizing DHT22 temperature-humidity sensor. This is a project developed under Metropolia University of Applied Sciences. For further information, please see below or contact one of the developers",
       tags: [
         {
-          name: "react",
+          name: "Kotlin",
           color: "blue-text-gradient",
         },
         {
-          name: "restapi",
+          name: "Firebase",
           color: "green-text-gradient",
         },
         {
-          name: "scss",
+          name: "Arduino",
           color: "pink-text-gradient",
         },
       ],
-      image: jobit,
-      source_code_link: "https://github.com/",
+      image: homeweather,
+      source_code_link: "https://github.com/anish0123/HomeWeather",
     },
     {
-      name: "Trip Guide",
+      name: "Oma Garden",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "Oma Garden is a mobile application built with React Native that allows users to upload and share pictures of their beloved plants. This app is designed to provide a seamless and user-friendly experience for plant enthusiasts.",
       tags: [
         {
-          name: "nextjs",
+          name: "react-native",
           color: "blue-text-gradient",
         },
         {
-          name: "supabase",
+          name: "javaScript",
           color: "green-text-gradient",
         },
         {
-          name: "css",
+          name: "react-hooks",
           color: "pink-text-gradient",
         },
       ],
-      image: tripguide,
-      source_code_link: "https://github.com/",
+      image: omaGarden,
+      source_code_link: "https://github.com/anish0123/omaGarden",
+    },
+    {
+      name: "Document Chat",
+      description:
+        "Document Chat is a project developed under Metropolia University of Applied Sciences's scope. It is an application where user can login to keep chat history, chat, upload a document to interact with (e.g Q&A), and logout.",
+      tags: [
+        {
+          name: "React",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Python",
+          color: "green-text-gradient",
+        },
+        {
+          name: "Llama 2",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: documentChat,
+      source_code_link: "https://github.com/anish0123/DocumentChat",
     },
   ];
   
-  export { services, technologies, experiences, testimonials, projects };
+  export { technologies, experiences, projects, education };

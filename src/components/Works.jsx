@@ -1,7 +1,6 @@
-import React from "react";
-import { SectionWrapper } from "../hoc";
+/* eslint-disable react/prop-types */
 import { motion } from "framer-motion";
-import { fadeIn, textVariant } from "../utils/motion";
+import { fadeIn, staggerContainer, textVariant } from "../utils/motion";
 import { styles } from "../styles";
 import { projects } from "../constants";
 import { Tilt } from "react-tilt";
@@ -57,7 +56,16 @@ const ProjectCard = ({
 
 const Works = () => {
   return (
-    <>
+    <motion.section
+        variants={staggerContainer()}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true, amount: 0.25 }}
+        className={`${styles.padding} max-w-7xl mx-auto relative z-0`}
+      >
+        <span className="hash-span" id={"works"}>
+          &nbsp;
+        </span>
       <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>My Work</p>
         <p className={styles.sectionHeadText}>Projects.</p>
@@ -77,8 +85,9 @@ const Works = () => {
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}
       </div>
-    </>
+    </motion.section>
   );
 };
 
-export default SectionWrapper(Works, "");
+
+export default Works;

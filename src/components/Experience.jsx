@@ -1,7 +1,7 @@
+/* eslint-disable react/prop-types */
 import { motion } from "framer-motion";
-import { textVariant } from "../utils/motion";
+import { staggerContainer, textVariant } from "../utils/motion";
 import { styles } from "../styles";
-import { SectionWrapper } from "../hoc";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
@@ -51,7 +51,16 @@ const ExperienceCard = ({ experience }) => {
 
 const Experience = () => {
   return (
-    <>
+    <motion.section
+        variants={staggerContainer()}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true, amount: 0.25 }}
+        className={`${styles.padding} max-w-7xl mx-auto relative z-0`}
+      >
+        <span className="hash-span" id={"experience"}>
+          &nbsp;
+        </span>
       <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>What I have done so far</p>
         <p className={styles.sectionHeadText}>Work Experience.</p>
@@ -63,8 +72,8 @@ const Experience = () => {
           ))}
         </VerticalTimeline>
       </div>
-    </>
+    </motion.section>
   );
 };
 
-export default SectionWrapper(Experience, "work");
+export default Experience;
