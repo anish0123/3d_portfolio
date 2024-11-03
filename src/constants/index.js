@@ -6,7 +6,6 @@ import {
     reactjs,
     tailwind,
     nodejs,
-    mongodb,
     git,
     figma,
     swappie,
@@ -64,10 +63,6 @@ import {
     {
       name: "Node JS",
       icon: nodejs,
-    },
-    {
-      name: "MongoDB",
-      icon: mongodb,
     },
     {
       name: "git",
