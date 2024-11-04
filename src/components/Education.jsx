@@ -9,7 +9,7 @@ const ProjectCard = ({ index, degree, date, location, school }) => {
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
       {" "}
       <div className="mx-auto flex flex-col w-full items-center justify-center p-5 rounded-2xl">
-        <div className=" bg-tertiary relative z-10 flex w-full cursor-pointer items-center overflow-hidden rounded-xl border border-slate-800 p-[1.5px]">
+        <div className="relative z-10 flex w-full cursor-pointer items-center overflow-hidden rounded-xl border border-slate-800 p-[1.5px]">
           <div className="animate-rotate absolute inset-0 h-full w-full rounded-full bg-[conic-gradient(#CB9DF0_20deg,transparent_120deg)]"></div>
           <div className="relative z-20 flex flex-col w-full rounded-[0.60rem] bg-slate-900 px-4 py-7">
             <h3 className="text-white font-bold text-[24px]">{degree}</h3>

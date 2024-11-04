@@ -1,10 +1,11 @@
 /* eslint-disable react/no-unknown-property */
-import React, { Suspense, useEffect, useState } from "react";
+import { Suspense, useEffect, useState } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 
 import CanvasLoader from "../Loader";
 
+// eslint-disable-next-line react/prop-types
 const Computers = ({isMobile}) => {
   const computer = useGLTF("./desktop_pc/scene.gltf");
   return (
@@ -22,7 +23,7 @@ const Computers = ({isMobile}) => {
       <primitive
         object={computer.scene}
         scale={isMobile ? 0.7 : 0.5}
-        position={isMobile ? [0, -3, -2.2]: [0, -3.25, -1.5]}
+        position={isMobile ? [0, -3, -2.2]: [0, -2.15, -1.0]}
         rotation={[-0.01, -0.2, -0.1]}
       />
     </mesh>
@@ -50,7 +51,7 @@ const ComputersCanvas = () => {
     <Canvas
       frameloop="demand"
       shadows
-      camera={{ position: [20, 3, 5], fov: 25 }}
+      camera={{ position: [20, 4, 5], fov: 25 }}
       gl={{ preserveDrawingBuffer: true }}
     >
       <Suspense fallback={<CanvasLoader />}>
