@@ -75,8 +75,7 @@ const Works = () => {
           variants={fadeIn("", "", 0.1, 1)}
           className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
         >
-          Answerpedia is a web application for users to ask questions and view
-          answers of any subjects related to coding and mathematics.
+          Here’s a collection of projects I’ve completed, highlighting my skills and experience across various domains.
         </motion.p>
       </div>
 
